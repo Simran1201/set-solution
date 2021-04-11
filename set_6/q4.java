@@ -13,8 +13,8 @@ public class q4 {
         arr[1][1] = 5;
         arr[1][2] = 6;
 
-        int i;
-        int j;
+        int i = arr[0][0];
+        int j = arr[1][0];
         System.out.println("MATRIX 1: ");
         for (i = 0; i <= arr.length - 1; i++) {
             for (j = 0; j <= arr[i].length - 1; j++) {
@@ -33,8 +33,8 @@ public class q4 {
         arr1[1][1] = 11;
         arr1[1][2] = 12;
 
-        int k;
-        int m;
+        int k = arr1[0][0];
+        int m = arr1[1][0];
         System.out.println("MATRIX 2: ");
         for (k = 0; k <= arr1.length - 1; k++) {
             for (m = 0; m <= arr1[k].length - 1; m++) {
@@ -46,7 +46,9 @@ public class q4 {
         System.out.println("The sum of two matrix is: ");
         int s = arr[i][j];
         int p = arr1[k][m];
-        int sum = arr[i][j] +  arr1[k][m];
+        int sum = s + p;
+        System.out.println(s);
+        System.out.println(p);
         System.out.println(sum);
 
     }
